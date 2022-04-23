@@ -1,10 +1,13 @@
-import styles from "./App.module.scss";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import HomePage from "./HomePage";
 
 function App() {
   return (
-    <div className={styles.app}>
-      <header className={styles.header}>Hi</header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
