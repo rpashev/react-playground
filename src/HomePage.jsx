@@ -20,7 +20,11 @@ const HomePage = () => {
           </div>
           <div>
             <h1>Components</h1>
-            <ul></ul>
+            <ul>
+              <li>
+                <NavLink to="/components/accordion">Accordion</NavLink>
+              </li>
+            </ul>
           </div>
         </nav>
       </header>

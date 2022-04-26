@@ -1,0 +1,60 @@
+.accordion {
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background-color: var(--color-gray-50);
+  padding: 3rem 2rem;
+  border-radius: 8px;
+}
+
+.btn {
+  font: inherit;
+  border: none;
+  cursor: pointer;
+  background-color: var(--color-gray-200);
+  transition: all 0.3s;
+  color: var(--color-gray-900);
+  width: 100%;
+  border-radius: 3px;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &:hover,
+  &:active {
+    background-color: var(--color-gray-300);
+  }
+
+  img {
+    width: 2rem;
+    transition: all 0.3s;
+  }
+}
+
+.panel {
+  display: none;
+  animation: slideDown 1.7s ease-out;
+
+  p {
+    margin: 0.5rem 0.25rem;
+  }
+}
+.visible {
+  .panel {
+    display: block;
+  }
+  img {
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    max-height: 0;
+  }
+  to {
+    max-height: 400px;
+  }
+}
