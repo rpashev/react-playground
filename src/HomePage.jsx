@@ -24,6 +24,9 @@ const HomePage = () => {
               <li>
                 <NavLink to="/components/accordion">Accordion</NavLink>
               </li>
+              <li>
+                <NavLink to="/components/button">Button</NavLink>
+              </li>
             </ul>
           </div>
         </nav>
